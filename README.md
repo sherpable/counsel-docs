@@ -1,14 +1,52 @@
 ---
 home: true
-heroImage: /hero.png
+heroImage: /logo.svg
 actionText: Get Started →
 actionLink: /guide/
 features:
-- title: Simplicity First test
-  details: Minimal setup with markdown-centered project structure helps you focus on writing.
-- title: Vue-Powered
-  details: Enjoy the dev experience of Vue + webpack, use Vue components in markdown, and develop custom themes with Vue.
-- title: Performant
-  details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
-footer: MIT Licensed | Copyright © 2018-present Evan You
+- title: It's like PHPUnit
+  details: If you love using PHPUnit, this testing framework is made for you.
+- title: It's Fast
+  details: This framework is built on top of Node.js which makes it very fast.
+- title: Vue.js support
+  details: It contains an elegant API for testing Vue.js components out of the box.
+footer: MIT Licensed | Copyright © 2018
 ---
+
+```js
+class CountdownTest extends VueComponentTestCase
+{
+    beforeEach()
+    {
+        super.beforeEach();
+
+        this.until = moment().add(10, 'seconds');
+
+        this.component = this.render('<countdown :until="until"></countdown>', { until: this.until });
+    }
+
+    /** @test */
+    it_is_able_to_render_the_countdown_component()
+    {
+        this.component.assertSee('0 Days');
+        this.component.assertSee('0 Hours');
+        this.component.assertSee('0 Minutes');
+        this.component.assertSee('10 Seconds');
+    }
+
+    /** @test */
+    it_will_update_the_seconds_proper_after_1_second_and_after_5_seconds()
+    {
+        this.component.fastForward('1s');
+
+        this.component.assertSee('0 Days');
+        this.component.assertSee('0 Hours');
+        this.component.assertSee('0 Minutes');
+        this.component.assertSee('9 Seconds');
+
+        this.component.fastForward('4s');
+
+        this.component.assertSee('5 Seconds');
+    }
+}
+```
