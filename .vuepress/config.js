@@ -1,6 +1,6 @@
 module.exports = {
 	dest: './docs',
-	base: '/counsel-docs/',
+	base: '/counsel/',
 	title: 'Counsel',
 	description: `Elegant testing framework for JS and Vue.js`,
 	themeConfig: {
