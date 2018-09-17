@@ -3,17 +3,23 @@ module.exports = {
 	base: '/counsel/',
 	title: 'Counsel',
 	description: `Elegant testing framework for JS and Vue.js`,
+	ga: 'UA-125943948-1',
 	themeConfig: {
 		nav: [
 			{ text: 'Home', link: '/' },
 			{ text: 'Guide', link: '/guide/' },
-			{ text: 'External', link: 'https://google.com' },
+			{ text: 'Github', link: 'https://github.com/timonschenzel/counsel' },
 		],
 		sidebar: {
 			'/guide/': [
 				['', 'Guide'],
-				'page-a',
-				'page-b',
+				'the-command-line-test-runner',
+				'writing-tests',
+				'writing-io-tests',
+				'writing-vue-component-tests',
+				'assertions',
+				'code-coverage',
+				'reporting',
 			],
 		},
 	}
