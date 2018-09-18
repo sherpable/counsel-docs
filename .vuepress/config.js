@@ -12,7 +12,7 @@ module.exports = {
 		],
 		sidebar: {
 			'/guide/': [
-				['', 'Guide'],
+				['', 'Introduction'],
 				'the-command-line-test-runner',
 				'writing-tests',
 				'writing-io-tests',

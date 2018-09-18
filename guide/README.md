@@ -1,12 +1,16 @@
-# Get started
+# Introduction
+
+## What is Counsel?
 
 Counsel is an elegant testing framework for JavaScript and Vue.js.
 
-## Installation
+## Getting Started
 
 ```bash
-npm install counseljs --save-dev
-yarn add counseljs --dev
+# Using npm
+npm install @sherpa/counsel --save-dev
+# Using Yarn
+yarn add @sherpa/counsel --dev
 ```
 
 Add `node_modules/.bin` to you PATH.
