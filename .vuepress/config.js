@@ -2,7 +2,7 @@ module.exports = {
 	dest: './docs',
 	base: '/counsel/',
 	title: 'Counsel',
-	description: `Elegant testing framework for JS and Vue.js`,
+	description: `Elegant testing framework for JS and Vue.js. Without callbacks.`,
 	ga: 'UA-125943948-1',
 	themeConfig: {
 		nav: [
