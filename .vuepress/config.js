@@ -18,6 +18,7 @@ module.exports = {
 				'writing-io-tests',
 				'writing-vue-component-tests',
 				'assertions',
+				'incomplete-and-skipped-tests',
 				'code-coverage',
 				'reporting',
 			],

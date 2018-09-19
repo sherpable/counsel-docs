@@ -1,6 +1,6 @@
 # The command line test runner
 
-The Counsel command-line test runner can be invoked through the counsel command. The following code shows how to run tests with the counsel command-line test runner:
+The Counsel command-line test runner can be invoked through the `counsel` command. The following example shows how to run tests with the counsel command-line test runner:
 
 ```bash
 $ counsel ArrayTest
@@ -11,7 +11,7 @@ Time: 55ms
 6 passed, 4 tests
 ```
 
-When invoked as shown above, the Counsel command-line test runner will look for a ArrayTest.js sourcefile in the current working directory, load it, and expect to find a ArrayTest test case class. It will then execute the tests of that class.
+When invoked as shown above, the Counsel command-line test runner will look for a ArrayTest.js sourcefile, by default in the tests folder in de current working directory. It will load the file, and expect to find a ArrayTest test case class. Than It will execute the tests within that class.
 
 For each test run, the Counsel command-line tool prints one character to indicate progress:
 
