@@ -11,7 +11,7 @@ Time: 55ms
 6 passed, 4 tests
 ```
 
-When invoked as shown above, the Counsel command-line test runner will look for a ArrayTest.js sourcefile, by default in the tests folder in de current working directory. It will load the file, and expect to find a ArrayTest test case class. Than It will execute the tests within that class.
+When invoked as shown above, the Counsel command-line test runner will look for a ArrayTest.js sourcefile, by default in the tests folder within the current working directory. It will load the file, and expect to find a ArrayTest test case class. Than It will execute the tests within that class.
 
 For each test run, the Counsel command-line tool prints one character to indicate progress:
 

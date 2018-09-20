@@ -17,10 +17,11 @@ module.exports = {
 				'writing-tests',
 				'writing-io-tests',
 				'writing-vue-component-tests',
-				'assertions',
 				'incomplete-and-skipped-tests',
 				'code-coverage',
 				'reporting',
+				'assertions',
+				'the-configuration-file',
 			],
 		},
 	}
