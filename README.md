@@ -1,14 +1,31 @@
 ---
 home: true
-heroImage: /logo.svg
-actionText: Get Started →
-actionLink: /guide/
-features:
-- title: It's like PHPUnit
-  details: If you love using PHPUnit, this testing framework is made for you.
-- title: It's different
-  details: Counsel is different from frameworks like jasmine, mocha, ava or jest. Simple, no callbacks.
-- title: Vue.js support
-  details: It contains an elegant API for testing Vue.js components out of the box.
-footer: MIT Licensed | Copyright © 2018
+layout: HomepageLayout
+pageClass: homepage
 ---
+
+```js
+class ArrayTest extends TestCase
+{
+    /** @test */
+    it_is_possible_to_push_items_to_an_array()
+    {
+        let array = [];
+        this.assertCount(0, array);
+
+        array.push('Counsel', 'Unit testing');
+        this.assertCount(2, array);
+    }
+
+    /** @test */
+    it_is_possible_to_pop_an_item_from_an_array()
+    {
+        let array = ['Counsel', 'Unit testing'];
+        this.assertCount(2, array);
+
+        let lastItem = array.pop();
+        this.assertEquals('Unit testing', lastItem);
+        this.assertCount(1, array);
+    }
+}
+```

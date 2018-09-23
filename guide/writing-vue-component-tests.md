@@ -4,6 +4,8 @@ One other nice feature about Counsel is "VueComponent" tests. This will give you
 
 The way you write vue component tests is the same you write normal tests for Counsel. But rather than extending `TestCase` you will need to extend `VueComponentTestCase`.
 
+## Example
+
 For example imagine this Menu component.
 
 ```js

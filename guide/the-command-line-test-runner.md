@@ -4,10 +4,12 @@ The Counsel command-line test runner can be invoked through the `counsel` comman
 
 ```bash
 $ counsel ArrayTest
-Counsel {version}.
+Counsel {version}
 
 ....
+
 Time: 55ms
+
 6 passed, 4 tests
 ```
 

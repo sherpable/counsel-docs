@@ -17,7 +17,9 @@ Another way we can write tests with Counsel is using Input/Output (IO) tests. Th
   - `skip` - mark the IO test as skipped
   - `assertions` - specify basic true/false expectations
 
-Example - Testing the famous `ls` command with Counsel.
+## Example
+
+Example 2.1 - Testing the famous `ls` command with Counsel.
 
 ```yaml
 test: |
@@ -42,7 +44,7 @@ test:
 perform:
   src/counsel.js --config dot-reporter-true-false-reporting-test.js --is-io-test
 expect: |
-  Counsel {{version}}.
+  Counsel {{version}}
 
   xx                        2 / 2 (100%)
 
@@ -69,6 +71,7 @@ expect: |
   true
 
   Time: {{executionTimeFormatted}}
+
   2 failed, 2 tests
 assertions:
   status: 2
