@@ -17,6 +17,7 @@ module.exports = {
 			{ text: 'Home', link: '/' },
 			{ text: 'Guide', link: '/guide/' },
 		],
+		sidebarDepth: 3,
 		sidebar: {
 			'/guide/': [
 				['', 'Introduction'],

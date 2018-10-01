@@ -39,3 +39,12 @@ class ArrayTest extends TestCase
     }
 }
 ```
+
+## Customizing a test method result
+The `TestClass` will contain 2 methods for customizing the result from a single test method.
+
+## pass(message)
+When calling this method within a test method, the test will be marked as passed.
+
+## fail(message)
+When calling this method within a test method, the test will be marked as a failure.

@@ -1,3 +1,23 @@
 # Assertions
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Counsel create a global `Assertions` object that will contains all available assertions. The `TestCase` class your tests will extend also delegate calls like ```this.assertEquals('bar', 'bar')``` to the `Assertions` class.
+
+## All available assertions
+
+### assertTrue(actual, message)
+
+### assertFalse(actual, message)
+
+### assertEquals(expected, actual, message)
+
+### assertNotEquals(expected, actual, message)
+
+### assertCount(expected, countable, message)
+
+### assertContains(regex, contents, message)
+
+### assertNotContains(regex, contents, message)
+
+### expectException(exception, exceptionMessage, failureMessage)
+
+### notExpectException(exception, failureMessage)
