@@ -1,6 +1,13 @@
 # Reporting
 
-Out of the box Counsel will come with the build-in `DotReporter`. This `DotReporter` will extend the `Repoter` class. The reporter is responsible for rendering the test result into the terminal. The reporter is build with the intention to make it 100% customisable. You can create you own `MyReporter` class, let it extend `DotRepoter` or `Reporter` and customize the methods bellow.
+Out of the box Counsel will come with the build-in `DotReporter`. This `DotReporter` will extend the `Repoter` class. The reporter is responsible for rendering the test result into the terminal. The reporter is build with the intention to make it 100% customisable. You can create you own `MyReporter` class, let it extend `DotRepoter` or `Reporter` and customize it.
+
+## Properties
+
+| Property        | Type           | Default    | Description |
+| --------------- | -------------- | ---------- | ----------- |
+| silent          | boolean        | false      | When set to true the repoter won't log anything to the console. |
+| indentation     | int            | 1          | This will be the number of spaces per indentation level. |
 
 ## Helpers
 
@@ -19,7 +26,7 @@ Add intentation to a message with a line break before it by default.
 Add intentation to a message without a line break before it.
 
 ### addIndentation(spaces = undefined)
-Add indentation, this is useful when you need to concatenate 2 string and add indentation between both.
+Add indentation, this is useful when you need to concatenate 2 string and add indentation between both. When spaces variable is undefined it will use the default indentation value.
 
 ### visualDifference(actual, expected)
 Visualize the difference bewteen the actual value and expected value, like `git diff`.
@@ -32,6 +39,8 @@ Visualize an assertion error.
 
 
 ## Before
+
+Useful `before` methods that could be overridden within you own `Reporter` class.
 
 ### beforeBoot()
 
@@ -49,6 +58,8 @@ Visualize an assertion error.
 
 
 ## After
+
+Useful `after` methods that could be overridden within you own `Reporter` class.
 
 ### afterBoot()
 

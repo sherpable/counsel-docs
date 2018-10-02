@@ -49,6 +49,8 @@ This test is not implemented yet.
 
 Not all tests can be run in every environment. Consider, for instance, a database abstraction layer that has several drivers for the different database systems it supports. The tests for the MySQL driver can of course only be run if a MySQL server is available.
 
+## Skipping test example
+
 Example 3.2 shows a test case class, DatabaseTest, that contains one test method, testConnection(). In the test case class' setUp() template method we check whether the MySQLi extension is available and use the `markAsSkipped()` method to skip the test if it is not.
 
 ```js
