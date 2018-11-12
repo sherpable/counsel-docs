@@ -8,7 +8,7 @@
 					<h1>Counsel</h1>
 
 					<p class="description">
-						Elegant testing framework for JavaScript and Vue.js without callbacks.
+						Elegant testing framework for JavaScript and Vue.js.
 					</p>
 					<p class="action">
 						<a href="/counsel/guide/" class="nav-link action-button">Get Started →</a>
