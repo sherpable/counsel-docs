@@ -31,7 +31,8 @@ View results: file:///{project-root}/coverage/index.html
 
 For all available type of coverage reports see [https://github.com/istanbuljs/nyc#running-reports](https://github.com/istanbuljs/nyc#running-reports)
 
-## Integrate with Coverage
+## Integrate with Codecov
+[Codecov](https://codecov.io/) is a great tool to visualize your code coverage.
 
 Add the following json into your package.json file:
 ```json

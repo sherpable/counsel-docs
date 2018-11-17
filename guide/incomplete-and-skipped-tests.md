@@ -9,6 +9,8 @@ When working on a new feature, it is possible to write out the behavior within a
 Example 3.1 shows how to mark a test as incomplete. This will be done by calling the method `markAsIncomplete()`.
 
 ```js
+counsel_use('TestCase');
+
 class ExampleIncompleteTest extends TestCase
 {
     /** @test */

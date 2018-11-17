@@ -10,11 +10,27 @@ Let's take a look how we can write tests using Counsel. The example will show ba
 
 4. Inside the test methods, assertion methods such as `assertEquals()` (see [Assertions](assertions.html)) are used to assert that an actual value matches an expected value.
 
+## The TestCase class
+In every test file we have to make the TestCase class available. The easiest way to achieve this is to make use of helper method `counsel_use()`.
+This helper method will accpect a name, Counsel will look if there is a dependency registerd with that given name.
+When found it will assign the dependency to the global object with the given name.
+
+For example, when running this code:
+
+```js
+counsel_use('TestCase');
+```
+The `TestCase` dependency from Counsel will be assigned to `global.TestCase`.
+
+So now that we undestand how to make the `TestCase` class available let's take a look at a test class example.
+
 ## Example
 
 Example 1.1 - Testing array operations with Counsel.
 
 ```js
+counsel_use('TestCase');
+
 class ArrayTest extends TestCase
 {
     /** @test */

@@ -30,12 +30,12 @@ Vue.component('menu', {
 With Counsel we can write tests for this component in a way we also will use the component in our website.
 
 ```js
+counsel_use('VueComponentTestCase');
+
 class MenuTest extends VueComponentTestCase
 {
     beforeEach()
     {
-        super.beforeEach();
-
         this.component = this.render('<menu :items="items"></menu>', {
             items: ['Foo', 'Bar', 'Baz']
         });
@@ -129,12 +129,12 @@ Vue.component('countdown', {
 ```
 
 ```js
+counsel_use('VueComponentTestCase');
+
 class CountdownTest extends VueComponentTestCase
 {
     beforeEach()
     {
-        super.beforeEach();
-
         this.until = moment().add(10, 'seconds');
 
         this.component = this.render(

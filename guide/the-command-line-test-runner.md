@@ -43,7 +43,7 @@ $ counsel --help
  Counsel {version}.
  
  Options:
- 	-h, --help         	Show some help.
+   -h, --help         	Show some help.
 
    -v, --version        Show counsel's verion number.
 
