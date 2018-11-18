@@ -3,6 +3,9 @@ module.exports = {
 	base: '/counsel/',
 	title: 'Counsel',
 	description: `Elegant testing framework for JS and Vue.js. Without callbacks.`,
+	head: [
+		['link', { rel: 'shortcut icon', type: "image/x-icon", href: `/favicon.ico` }]
+	],
 	ga: 'UA-125943948-1',
 	themeConfig: {
 		repo: 'timonschenzel/counsel',
