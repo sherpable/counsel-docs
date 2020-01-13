@@ -2,6 +2,7 @@
 home: true
 layout: HomepageLayout
 pageClass: homepage
+navbar: true
 ---
 
 ```js

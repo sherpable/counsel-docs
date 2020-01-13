@@ -8,8 +8,9 @@ module.exports = {
 	],
 	ga: 'UA-125943948-1',
 	themeConfig: {
-		repo: 'timonschenzel/counsel',
-		docsRepo: 'timonschenzel/counsel-docs',
+		navbar: true,
+		repo: 'sherpable/counsel',
+		docsRepo: 'sherpable/counsel-docs',
 		editLinks: true,
 		editLinkText: 'Edit this page on GitHub',
 		lastUpdated: 'Last Updated',
