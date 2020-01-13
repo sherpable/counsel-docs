@@ -48,7 +48,7 @@
 			</div>
 		</div>
 		<div class="footer">
-			MIT Licensed | Copyright © 2018
+			MIT Licensed | Copyright © {{ new Date().getFullYear() }}
 		</div>
 	</div>
 </template>

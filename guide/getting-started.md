@@ -2,9 +2,9 @@
 
 ```bash
 # Using npm
-npm install @sherpajs/counsel --save-dev
+npm install @sherpable/counsel --save-dev
 # Using Yarn
-yarn add @sherpajs/counsel --dev
+yarn add @sherpable/counsel --dev
 ```
 
 Add `node_modules/.bin` to you PATH.
