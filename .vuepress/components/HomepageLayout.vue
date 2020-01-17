@@ -1,7 +1,8 @@
 <template>
 	<div>
+		<Navbar />
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-		<div style="background-image: url(/counsel/background.png)">
+		<div class="home-container" style="background-image: url(/counsel/background.png)">
 			<div class="home">
 				<div class="hero">
 					<i class="fas fa-check-double fa-6x"></i>
@@ -52,3 +53,10 @@
 		</div>
 	</div>
 </template>
+<script>
+import Navbar from '@theme/components/Navbar.vue'
+
+export default {
+	components: { Navbar },
+}
+</script>
